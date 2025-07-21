@@ -1,31 +1,17 @@
-# semana-js
-projeto semana js
-const mostrarParesAte = (n) => {
-  for (let i = 0; i <= n; i++) {
-    if (i % 2 === 0) {
-      console.log(i);
-    }
-  }
-};
+// Exercício 1: Repetição com for
+for (let i = 0; i < 5; i++) {
+  console.log(`Contagem: ${i}`);
+}
 
-mostrarParesAte(10);
+// Exercício 2: Arrow function simples
+const saudacao = () => console.log("Olá!");
 
-const gerarNumeroAleatorio = () => {
-  return Math.floor(Math.random() * 10) + 1;
-};
+// Exercício 3: Arrow function com parâmetros
+const soma = (a, b) => a + b;
 
-const simularAdivinhacao = () => {
-  const numeroSecreto = gerarNumeroAleatorio();
-  let tentativas = 0;
-  let numeroAdivinhado = 0;
-
-  while (numeroAdivinhado !== numeroSecreto) {
-    tentativas++;
-    numeroAdivinhado = gerarNumeroAleatorio();
-    console.log(`Tentativa ${tentativas}: ${numeroAdivinhado}`);
-  }
-
-  console.log(`Acertou em ${tentativas} tentativas. O número secreto era ${numeroSecreto}`);
-};
-
-simularAdivinhacao();
+// Exercício 4: Repetição com while
+let x = 0;
+while (x < 3) {
+  console.log(`Valor de x: ${x}`);
+  x++;
+}
